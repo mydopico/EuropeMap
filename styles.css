@@ -1,0 +1,103 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;  
+    background-color: #232b39 !important;
+    font-family: 'Poppins', sans-serif !important;
+    position: relative;
+}
+
+svg {
+    margin-top: 5px;
+}
+
+svg path {
+    fill: #161d26;
+    stroke: #eee;
+    stroke-width: .25;
+}
+
+svg path:hover {  
+    fill: #2a3747;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+#ui {
+    font-size: .5em;
+}
+
+h1 {
+    color: #eee;
+    margin-top: 10px !important;
+    margin-left: 5%;
+    font-weight: 700 !important;
+}
+
+#interactive {
+    color: rgba(255, 86, 51, 0.8);
+    font-weight: 400;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: rgba(255, 86, 51, 0.7) !important;
+    --bs-tooltip-color: #000 !important;
+  }
+
+  .legend {
+    width: 30%;
+    position: absolute;
+    font-size: 1.2em;     
+    right: 30px;
+    padding: .8em;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    line-height: 1.8em;
+    box-shadow: 5px 5px 18px #4a4949;
+  }
+
+.legend span {
+    font-weight: 400;  
+  }
+
+#sources {
+    font-size: 0.5em;
+    font-weight: 100;
+    font-style: italic;
+}
+
+@media  screen and (max-width: 600px) {
+
+    h1 {      
+        font-weight: 400 !important;
+    }
+
+    svg {
+        width: 100%;        
+    }
+
+    .legend {
+        font-size: .6em;
+        width: 40%;    
+        left: 10px;  
+        padding: .4em;
+        background: rgba(0, 0, 0, 0.3);         
+        box-shadow: none;
+    }
+
+    .custom-tooltip {
+        --bs-tooltip-font-size: 0.55em !important;        
+    }
+
+    svg path:hover {  
+        transition: 0.9s;
+        cursor: pointer;
+    }
+
+      
+}
